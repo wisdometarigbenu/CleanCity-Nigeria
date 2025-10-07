@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanCity Collector Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CleanCity</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <!-- <a href="login.html">User Login</a> 
+            <a href="signup.html" class="btn-primary">User Sign Up</a>  -->
+        </nav>
+    </header>
+
+    <section id="collector-login-form">
+        <h2>Collector Access</h2>
+        <p>Log in to view pickup requests and manage your jobs</p>
+        
+        <div class="form-container">
+            <form action="" method="post">
+                <label for="collector-id">Collector ID or Phone Number</label>
+                <input type="text" id="collector-id" name="collector_id" placeholder="e g CLN001 or 08012345678" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" class="btn-primary btn-large">Log In as Collector</button>
+            </form>
+            
+            <p >
+                  <div class="separator">
+                    <hr>
+                        <span>OR</span>
+                    <hr>
+                  </div>
+               <button type="submit" class="btn-special">Sign up as Collector</button>
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

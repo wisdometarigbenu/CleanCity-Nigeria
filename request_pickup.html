@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanCity - Request a Pickup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">CleanCity</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <!-- <a href="login.html">Login</a> -->
+            <a href="signup.html" class="btn-primary">Sign Up</a>
+        </nav>
+    </header>
+
+    <section id="pickup-form">
+        <h2>Schedule Your Waste Pickup</h2>
+        <p>Book a collector for your trash or recyclables instantly.</p>
+        
+        <div class="form-container">
+            <form action="" method="post"> 
+                
+                <label for="address">Pickup Address</label>
+                <input type="text" id="address" name="address" placeholder="e g Your Street Name Port Harcourt" required>
+
+                <label for="type">Waste Type</label>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Select Waste Type</option>
+                    <option value="general">General Waste Trash</option>
+                    <option value="recyclables">Sorted Recyclables Only</option>
+                    <option value="mixed">Mixed Waste & Recyclables</option>
+                </select>
+
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Preferred Time Slot</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="notes">Special Instructions (Optional)</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="e g Gate code or heavy items"></textarea>
+                
+                <button type="submit" class="btn-primary btn-large">Confirm Pickup Request</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
